@@ -18,8 +18,8 @@ export function getConfig(config: any, node?: any, msg?: any): any {
     const cloudConfig = {     
         name: msg?.name || config?.name,
         endpoint: config?.endpoint,
-        profiles: [config?.profiles|| 'dev'] ,
-        label: config?.label || 'master',
+        profiles: [node?.profiles|| 'dev'] ,
+        label: node?.label || 'master',
         pass: config?.credentials?.pass,
         user: config?.credentials?.user,
         configtoken: config?.credentials?.configtoken,

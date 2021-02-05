@@ -11,8 +11,9 @@
                     type: "springcloud-config",
                     required: false
                 },
-                application:{}
-               
+                application:{},
+                profiles:{},
+                label:{}
             },
             inputs: 1,
             outputs: 1,
@@ -67,6 +68,14 @@
     <div class="form-row event">
         <label for="node-input-application"><i class="fa fa-globe"></i> <span>application</span></label>
         <input type="text" id="node-input-application">
+    </div>
+    <div class="form-row event">
+        <label for="node-input-profiles"><i class="fa fa-globe"></i> <span>profiles</span></label>
+        <input type="text" id="node-input-profiles">
+    </div>
+    <div class="form-row event">
+        <label for="node-input-label"><i class="fa fa-globe"></i> <span>label</span></label>
+        <input type="text" id="node-input-label">
     </div>
     
 </script>
